@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "597357297553",
+    "firebase_url": "https://maidenexpress.firebaseio.com",
+    "project_id": "maidenexpress",
+    "storage_bucket": "maidenexpress.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:597357297553:android:0a26ac460f2a42d3bde430",
+        "android_client_info": {
+          "package_name": "com.maidenexpress"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "597357297553-fsgurnr7opddhl8inlb4sr3c5vomshi0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maidenexpress",
+            "certificate_hash": "d2f7305ee00b64fa92481d688625be8cd78ab7a3"
+          }
+        },
+        {
+          "client_id": "597357297553-he35lmqnb8k8butqrs5q23f7c0ri66ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU97vHepw3ySaWaCSQ_ANv5uikd9kIH5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "597357297553-he35lmqnb8k8butqrs5q23f7c0ri66ps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

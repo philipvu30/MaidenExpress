@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".BookingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tbAddBookingDetail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:title="Add Booking">
+
+
+            <ImageView
+                android:id="@+id/imgClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/small_margin"
+                android:src="@drawable/ic_close" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_gravity="">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your House Detail"
+                        android:textSize="@dimen/medium_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkRoom"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Room(s)"
+                            android:textSize="@dimen/small_text" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnAddRoom"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="+"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/etRoom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="2"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/small_text" />
+
+                            <Button
+                                android:id="@+id/btnSubRoom"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="-"
+                                android:textSize="@dimen/medium_text" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkKitchen"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Kitchen(s)"
+                            android:textSize="@dimen/small_text" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnAddKitchen"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="+"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/etKitchen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="2"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/small_text" />
+
+                            <Button
+                                android:id="@+id/btnSubKitchen"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="-"
+                                android:textSize="@dimen/medium_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkBath"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Bathroom(s)"
+                            android:textSize="@dimen/small_text" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnAddBath"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="+"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/etBath"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="2"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/small_text" />
+
+                            <Button
+                                android:id="@+id/btnSubBath"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="-"
+                                android:textSize="@dimen/medium_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/medium_margin"
+                        android:orientation="horizontal">
+
+
+                        <CheckBox
+                            android:id="@+id/chkLivRoom"
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Living room(s)"
+                            android:textSize="@dimen/small_text" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btnAddLivRoom"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="+"
+                                android:textSize="@dimen/medium_text" />
+
+                            <TextView
+                                android:id="@+id/etLivRoom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="2"
+                                android:inputType="number"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="@dimen/small_text" />
+
+                            <Button
+                                android:id="@+id/btnSubLivRoom"
+                                android:layout_width="40dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="-"
+                                android:textSize="@dimen/medium_text" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time"
+                        android:textSize="@dimen/medium_text" />
+
+
+                    <TextView
+                        android:id="@+id/tvBookTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/medium_margin"
+                        android:drawableStart="@drawable/ic_clock"
+                        android:drawablePadding="6dp"
+                        android:paddingTop="6dp"
+                        android:textSize="@dimen/small_text" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Date"
+                        android:textSize="@dimen/medium_text" />
+
+                    <TextView
+                        android:id="@+id/tvBookDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/medium_margin"
+                        android:drawableStart="@drawable/ic_date"
+                        android:drawablePadding="6dp"
+                        android:paddingTop="6dp"
+                        android:textSize="@dimen/small_text" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Choose your maid"
+                        android:textSize="@dimen/medium_text" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/medium_margin">
+
+                        <RadioButton
+                            android:id="@+id/radioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Professional"
+                            android:textSize="@dimen/small_text" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="Experienced"
+                            android:textSize="@dimen/small_text" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Inexperienced"
+                            android:textSize="@dimen/small_text" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Services"
+                        android:textSize="@dimen/medium_text"/>
+
+
+                    <CheckBox
+                        android:id="@+id/chkCleanRoom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clean room"
+                        android:textSize="@dimen/small_text" />
+
+                    <CheckBox
+                        android:id="@+id/chkLaundry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Laundry"
+                        android:textSize="@dimen/small_text" />
+
+                    <CheckBox
+                        android:id="@+id/chkCleanToilet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clean toilet"
+                        android:textSize="@dimen/small_text" />
+
+                    <CheckBox
+                        android:id="@+id/chkCleanDishes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clean dishes"
+                        android:textSize="@dimen/small_text" />
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="100dp"
+                app:cardElevation="6dp"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:id="@+id/btnBookComplete"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_green_light"
+                    android:text="Complete" />
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>
